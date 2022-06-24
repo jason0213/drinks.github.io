@@ -1,0 +1,65 @@
+#tast1{
+    position: relative;
+  }
+  #tast1 .tast1-container {
+    display: none;
+  }
+  #tast1 .scrollable {
+    *zoom: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+  }
+  #tast1 .scrollable:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .tast1-navigation {
+    margin: 0 auto;
+    position: absolute;
+    z-index: 3;
+    top: 46%;
+    width: 100%;
+  }
+  .tast1-navigation a {
+    position: absolute;
+    display: block;
+  }
+  .tast1-navigation a.prev {
+    left: 0;
+  }
+  .tast1-navigation a.next {
+    right: 0;
+  }
+  
+  .tast1-pagination {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .tast1-pagination a {
+    border: 2px solid #222;
+    border-radius: 15px;
+    width: 10px;
+    height: 10px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=");
+    margin: 2px;
+    overflow: hidden;
+    text-indent: -100%;
+  }
+  .tast1-pagination a.current {
+    background: #222;
+  }
